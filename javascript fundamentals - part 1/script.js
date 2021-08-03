@@ -42,21 +42,40 @@ const halfPopulation = population / 2;
 console.log(population + 1);
 
 //Finland has a population of 6 million. Does your country have more people than Finland?
+
 const findlandPopulation = 600000;
 console.log(population > findlandPopulation);
 
 //The average population of a country is 33 million people. Does your country have less people than the average country?
+
 const avarageCountryPopulation = 3300000;
 console.log(population > avarageCountryPopulation);
 
 // create a new variable 'description' which contains a string with this format: 'Portugal is in Europe,
 //and its 11 million people speak portuguese'
+
 const description = 'Portugal is in Europe, and its 11 million people speak portuguese';
+
 // ----------------------------------------------------------------------------
-*/
+
 
 // -----------------Lecture: string and template literals----------------------
 // ----------------------------------------------------------------------------
-const description = `Purtogal is in Europe, and its 11 million people speak portuguese`;
+
+const description = `Purtogal is in Europe, and its 11 million people speak
+portuguese`;
+
+// ----------------------------------------------------------------------------
+*/
+
+//----------LECTURE: Taking Decisions: if / else Statements -------------------
 // ----------------------------------------------------------------------------
 
+const population = 161000000;
+const isHigherThan33 = population > 33000000;
+if (isHigherThan33) {
+  console.log(`Purtogal's population is above average`);
+} else {
+  console.log(`Purtogal's population is 22 million below average`);
+}
+// ----------------------------------------------------------------------------
