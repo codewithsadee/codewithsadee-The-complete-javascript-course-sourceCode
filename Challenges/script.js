@@ -16,7 +16,6 @@ console.log(markHigherBMI);
 
 // ----------------------------------------------------------------------------
 
-*/
 
 //------------------------- conding challenge #2-------------------------------
 // ----------------------------------------------------------------------------
@@ -38,3 +37,47 @@ if (isMarkHigherBMI) {
 }
 
 // ----------------------------------------------------------------------------
+
+*/
+
+//------------------------- conding challenge #3-------------------------------
+// ----------------------------------------------------------------------------
+
+const dolphinsAverage = (96 + 108 + 89) / 2;
+const koalasAverage = (88 + 91 + 110) / 2;
+if (dolphinsAverage > koalasAverage) {
+  console.log(`Dolphin is winner🏆. Score: ${dolphinsAverage}`);
+} else if (dolphinsAverage < koalasAverage) {
+  console.log(`Koalas is winner🏆. Score: ${koalasAverage}`);
+} else {
+  console.log(`Match is drow.`);
+}
+
+//------> Bonus #1
+
+const dolphinsAverage = (97 + 112 + 101) / 2;
+const koalasAverage = (109 + 95 + 123) / 2;
+const minScore = 100;
+if (dolphinsAverage > koalasAverage && dolphinsAverage >= minScore) {
+  console.log(`Dolphin is winner🏆. Score: ${dolphinsAverage}`);
+} else if (koalasAverage > dolphinsAverage && koalasAverage >= minScore) {
+  console.log(`Koalas is winner🏆. Score: ${koalasAverage}`);
+} else {
+  console.log(`Match is Draw`);
+}
+
+//------> Bonus #2
+
+const dolphinsAverage = (97 + 112 + 101) / 2;
+const koalasAverage = (109 + 95 + 106) / 2;
+const minScore = 100;
+if (dolphinsAverage === koalasAverage && dolphinsAverage >= minScore && koalasAverage >= minScore) {
+  console.log(`Math is draw. 
+  Dolphins Score: ${dolphinsAverage} 
+  Koalas Score: ${koalasAverage}`);
+} else {
+  console.log(`No winners! 🙁`);
+}
+
+// ----------------------------------------------------------------------------
+
