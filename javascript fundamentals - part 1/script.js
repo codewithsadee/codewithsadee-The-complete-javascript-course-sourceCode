@@ -125,7 +125,6 @@ if (langueage === `english` && population < 5000000 && !isIsland) {
 }
 
 //-----------------------------------------------------------------------------
-*/
 
 //--------------------LECTURE: The switch Statement---------------------------
 //-----------------------------------------------------------------------------
@@ -151,4 +150,15 @@ switch (language) {
   default:
     console.log(`${language} is Great laguage too 😁`);
 }
+//-----------------------------------------------------------------------------
+*/
+
+//----------------Lecture: The conditional (ternary) operator------------------
+//-----------------------------------------------------------------------------
+
+let country = 'Bangladesh';
+let population = 16100000;
+const result = population > 3300000 ? `${country} Population is above average` : `${country} population is below average`;
+console.log(result);
+
 //-----------------------------------------------------------------------------
