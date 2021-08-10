@@ -108,7 +108,7 @@ if (neighboursIsOne) {
 }
 
 // ----------------------------------------------------------------------------
-*/
+
 
 //------------------------LECTURE: Logical Operators --------------------------
 // ----------------------------------------------------------------------------
@@ -124,4 +124,31 @@ if (langueage === `english` && population < 5000000 && !isIsland) {
   console.log(`${country} does not meet your criteria 😔`);
 }
 
+//-----------------------------------------------------------------------------
+*/
+
+//--------------------LECTURE: The switch Statement---------------------------
+//-----------------------------------------------------------------------------
+
+const language = `Chinese`;
+switch (language) {
+  case `Chinese`:
+  case `Mandarin`:
+    console.log(`${language} is MOST number of native speakers`);
+    break;
+  case `Spanish`:
+    console.log(`${language} is 2nd place of number of native speakers`);
+    break;
+  case `English`:
+    console.log(`${language} is 3rd place of native speakers`);
+    break;
+  case `Hindi`:
+    console.log(`${language} is 4rth place of native speakers`);
+    break;
+  case `Arabic`:
+    console.log(`${language} is 5th place of native speakers`);
+    break;
+  default:
+    console.log(`${language} is Great laguage too 😁`);
+}
 //-----------------------------------------------------------------------------
