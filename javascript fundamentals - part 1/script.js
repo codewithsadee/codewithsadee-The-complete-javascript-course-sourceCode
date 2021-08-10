@@ -82,17 +82,19 @@ if (isHigherThan33) {
 
 
 //-----------LECTURE:  Type conversion and coercion Statements ----------------
+// ----------------------------------------------------------------------------
 
 `9` - `5`  //4
-  `19` - `13` + `17`; //617 
+  `19` - `13` + `17`; //617
 `19` - `13` + 17; // 23
 `123` < 57; // false
 5 + 6 + `4` + 9 - 4 - 2; // 1143
 
 // ----------------------------------------------------------------------------
-*/
+
 
 //----------------LECTURE: Equality Operators: == vs. === ---------------------
+// ----------------------------------------------------------------------------
 
 const numNeighbours = Number(prompt(`How many neighbour countries does your country have?`));
 const neighboursIsOne = numNeighbours === 1;
@@ -106,3 +108,20 @@ if (neighboursIsOne) {
 }
 
 // ----------------------------------------------------------------------------
+*/
+
+//------------------------LECTURE: Logical Operators --------------------------
+// ----------------------------------------------------------------------------
+
+let country = 'Bangladesh';
+let population = 16100000;
+let isIsland = false;
+let langueage = `bangla`;
+
+if (langueage === `english` && population < 5000000 && !isIsland) {
+  console.log(`You should live in ${country} 😁`);
+} else {
+  console.log(`${country} does not meet your criteria 😔`);
+}
+
+//-----------------------------------------------------------------------------
