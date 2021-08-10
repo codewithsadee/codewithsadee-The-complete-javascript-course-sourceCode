@@ -79,7 +79,7 @@ if (isHigherThan33) {
   console.log(`Purtogal's population is 22 million below average`);
 }
 // ----------------------------------------------------------------------------
-*/
+
 
 //-----------LECTURE:  Type conversion and coercion Statements ----------------
 
@@ -88,5 +88,21 @@ if (isHigherThan33) {
 `19` - `13` + 17; // 23
 `123` < 57; // false
 5 + 6 + `4` + 9 - 4 - 2; // 1143
+
+// ----------------------------------------------------------------------------
+*/
+
+//----------------LECTURE: Equality Operators: == vs. === ---------------------
+
+const numNeighbours = Number(prompt(`How many neighbour countries does your country have?`));
+const neighboursIsOne = numNeighbours === 1;
+const neighboursIsMoreThanOne = numNeighbours > 1;
+if (neighboursIsOne) {
+  console.log(`only ${numNeighbours} border`);
+} else if (neighboursIsMoreThanOne) {
+  console.log(`${numNeighbours} is grater than 1`);
+} else {
+  console.log(`No border`);
+}
 
 // ----------------------------------------------------------------------------
