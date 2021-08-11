@@ -38,7 +38,7 @@ if (isMarkHigherBMI) {
 
 // ----------------------------------------------------------------------------
 
-*/
+
 
 //------------------------- conding challenge #3-------------------------------
 // ----------------------------------------------------------------------------
@@ -72,8 +72,8 @@ const dolphinsAverage = (97 + 112 + 101) / 2;
 const koalasAverage = (109 + 95 + 106) / 2;
 const minScore = 100;
 if (dolphinsAverage === koalasAverage && dolphinsAverage >= minScore && koalasAverage >= minScore) {
-  console.log(`Math is draw. 
-  Dolphins Score: ${dolphinsAverage} 
+  console.log(`Math is draw.
+  Dolphins Score: ${dolphinsAverage}
   Koalas Score: ${koalasAverage}`);
 } else {
   console.log(`No winners! 🙁`);
@@ -81,3 +81,14 @@ if (dolphinsAverage === koalasAverage && dolphinsAverage >= minScore && koalasAv
 
 // ----------------------------------------------------------------------------
 
+*/
+
+//------------------------- conding challenge #3-------------------------------
+// ----------------------------------------------------------------------------
+
+const bill = 275;
+const tip = bill * (bill > 50 && bill < 300 ? 15 : 20) / 100;
+console.log(`The bill was ${bill} 💰 & tip is ${tip} 💴`);
+
+
+// ----------------------------------------------------------------------------

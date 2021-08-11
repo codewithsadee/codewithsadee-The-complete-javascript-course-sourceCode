@@ -158,7 +158,7 @@ switch (language) {
 
 let country = 'Bangladesh';
 let population = 16100000;
-const result = population > 3300000 ? `${country} Population is above average` : `${country} population is below average`;
+const result = `${country}'s population is ${population > 33000000 ? `above` : `below`} average`;
 console.log(result);
 
 //-----------------------------------------------------------------------------
