@@ -16,7 +16,7 @@ console.log(ind);
 console.log(ru);
 //-----------------------------------------------------------------------------
 
-*/
+
 
 //----------------LECTURE: Function Declarations vs. Expressions --------------------
 //-----------------------------------------------------------------------------
@@ -44,3 +44,18 @@ percentageOfWorld2(1366, `India`);
 percentageOfWorld2(21.8, `Sri-Lanka`);
 //-----------------------------------------------------------------------------
 
+*/
+//-------------------------LECTURE: Arrow Functions----------------------------
+//-----------------------------------------------------------------------------
+
+const percentageOfWorld3 = (population, country) => {
+  const peoplePercentageOfWorld3 = population / 7900 * 100;
+  console.log(`${country} has ${population} million people it's about 
+  ${peoplePercentageOfWorld3}% of the world population`);
+}
+
+percentageOfWorld3(161, `Bangladesh`);
+percentageOfWorld3(1366, `India`);
+percentageOfWorld3(21.8, `Sri-Lanka`);
+
+//-----------------------------------------------------------------------------
