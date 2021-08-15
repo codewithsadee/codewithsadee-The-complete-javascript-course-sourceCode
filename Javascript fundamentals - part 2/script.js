@@ -44,7 +44,7 @@ percentageOfWorld2(1366, `India`);
 percentageOfWorld2(21.8, `Sri-Lanka`);
 //-----------------------------------------------------------------------------
 
-*/
+
 //-------------------------LECTURE: Arrow Functions----------------------------
 //-----------------------------------------------------------------------------
 
@@ -59,3 +59,25 @@ percentageOfWorld3(1366, `India`);
 percentageOfWorld3(21.8, `Sri-Lanka`);
 
 //-----------------------------------------------------------------------------
+*/
+
+//---------------Lecture: function calling other function---------------------
+//-----------------------------------------------------------------------------
+
+function percentageOfWorld1(population) {
+  return population / 7900 * 100;
+}
+
+
+const describePopulation = function (country, population) {
+  const peoplePercentageOfWorld = percentageOfWorld1(population);
+  const countryDetails = `${country} has ${population} million pepole. which is about ${peoplePercentageOfWorld}%`;
+  return countryDetails;
+}
+
+console.log(describePopulation(`Bangladesh`, 161));
+console.log(describePopulation(`India`, 1366));
+console.log(describePopulation(`Sri Lanka`, 21.8));
+//-----------------------------------------------------------------------------
+
+
