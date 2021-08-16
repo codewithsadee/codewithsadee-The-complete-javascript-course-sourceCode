@@ -134,7 +134,7 @@ const myCountry = {
 console.log(myCountry);
 
 //-----------------------------------------------------------------------------
-*/
+
 
 //---------------------LECTURE: Dot vs. Bracket Notation-----------------------
 //-----------------------------------------------------------------------------
@@ -156,5 +156,30 @@ console.log(`${myCountry.country} has ${myCountry.populations}
 
  myCountry[`populations`] -= 2;
  console.log(myCountry.populations);
+
+//-----------------------------------------------------------------------------
+*/
+
+//-------------------------LECTURE: Object Methods-----------------------------
+//-----------------------------------------------------------------------------
+
+const myCountry = {
+  country: `Bangladesh`,
+  capital: `Dhaka`,
+  language: `Bangla`,
+  populations: 163,
+  neighbours: [`India`, `Sri Lanka`, `Pakistan`],
+  describe: function() {
+    console.log(`${this.country} has ${this.populations} million bagali-speaking people,
+    ${this.neighbours.length} neighbores countries and a capital called ${this.capital}`)
+  },
+  checkIsland: function() {
+    return this.isIslan = this.neighbours.length === 0 ? true : false;
+  }
+};
+
+
+myCountry.describe();
+console.log(myCountry.checkIsland());
 
 //-----------------------------------------------------------------------------
