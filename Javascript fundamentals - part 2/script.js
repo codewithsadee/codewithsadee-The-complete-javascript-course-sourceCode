@@ -59,7 +59,6 @@ percentageOfWorld3(1366, `India`);
 percentageOfWorld3(21.8, `Sri-Lanka`);
 
 //-----------------------------------------------------------------------------
-*/
 
 //---------------Lecture: function calling other function---------------------
 //-----------------------------------------------------------------------------
@@ -79,5 +78,25 @@ console.log(describePopulation(`Bangladesh`, 161));
 console.log(describePopulation(`India`, 1366));
 console.log(describePopulation(`Sri Lanka`, 21.8));
 //-----------------------------------------------------------------------------
+*/
 
 
+//-------------------LECTURE: Introduction to Arrays---------------------------
+//-----------------------------------------------------------------------------
+
+function percentageOfWorld1(population) {
+  return population / 7900 * 100;
+}
+
+const population = [161, 1366, 21, 66];
+console.log( population.length === 4 );
+
+const persentages = [
+  percentageOfWorld1(population[0]),
+  percentageOfWorld1(population[1]),
+  percentageOfWorld1(population[2]),
+  percentageOfWorld1(population[3])
+];
+console.log(persentages);
+
+//-----------------------------------------------------------------------------
