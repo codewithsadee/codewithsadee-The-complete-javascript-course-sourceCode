@@ -120,7 +120,6 @@ neighbours[neighbours.indexOf(`Pakistan`)] = `Chaina`;
 console.log(neighbours);
 
 //-----------------------------------------------------------------------------
-*/
 
 //--------------------LECTURE: Introduction to Objects-------------------------
 //-----------------------------------------------------------------------------
@@ -133,5 +132,29 @@ const myCountry = {
   neighbours: [`India`, `Sri Lanka`, `Pakistan`]
 };
 console.log(myCountry);
+
+//-----------------------------------------------------------------------------
+*/
+
+//---------------------LECTURE: Dot vs. Bracket Notation-----------------------
+//-----------------------------------------------------------------------------
+
+const myCountry = {
+  country: `Bangladesh`,
+  capital: `Dhaka`,
+  language: `Bangla`,
+  populations: 163,
+  neighbours: [`India`, `Sri Lanka`, `Pakistan`]
+};
+
+console.log(`${myCountry.country} has ${myCountry.populations}
+ Bangali-speaking people, ${myCountry.neighbours.length} neighboring countries
+ and a capital called ${myCountry.capital}`);
+
+ myCountry.populations += 2;
+ console.log(myCountry.populations);
+
+ myCountry[`populations`] -= 2;
+ console.log(myCountry.populations);
 
 //-----------------------------------------------------------------------------
