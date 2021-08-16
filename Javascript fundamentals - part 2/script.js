@@ -100,7 +100,7 @@ const persentages = [
 console.log(persentages);
 
 //-----------------------------------------------------------------------------
-*/
+
 
 //-------------LECTURE: Basic Array Operations (Methods)-----------------------
 //-----------------------------------------------------------------------------
@@ -118,5 +118,20 @@ if (!neighbours.includes(`Germamy`)) {
 
 neighbours[neighbours.indexOf(`Pakistan`)] = `Chaina`;
 console.log(neighbours);
+
+//-----------------------------------------------------------------------------
+*/
+
+//--------------------LECTURE: Introduction to Objects-------------------------
+//-----------------------------------------------------------------------------
+
+const myCountry = {
+  country: `Bangladesh`,
+  capital: `Dhaka`,
+  language: `Bangla`,
+  populations: 163,
+  neighbours: [`India`, `Sri Lanka`, `Pakistan`]
+};
+console.log(myCountry);
 
 //-----------------------------------------------------------------------------
