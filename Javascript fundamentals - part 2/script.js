@@ -78,7 +78,7 @@ console.log(describePopulation(`Bangladesh`, 161));
 console.log(describePopulation(`India`, 1366));
 console.log(describePopulation(`Sri Lanka`, 21.8));
 //-----------------------------------------------------------------------------
-*/
+
 
 
 //-------------------LECTURE: Introduction to Arrays---------------------------
@@ -98,5 +98,25 @@ const persentages = [
   percentageOfWorld1(population[3])
 ];
 console.log(persentages);
+
+//-----------------------------------------------------------------------------
+*/
+
+//-------------LECTURE: Basic Array Operations (Methods)-----------------------
+//-----------------------------------------------------------------------------
+
+const neighbours = [`India`, `Sri Lanka`, `Pakistan`];
+neighbours.push(`Utopia`);
+console.log(neighbours);
+
+neighbours.pop();
+console.log(neighbours);
+
+if (!neighbours.includes(`Germamy`)) {
+  console.log(`Probably not a central European country ☺`);
+} 
+
+neighbours[neighbours.indexOf(`Pakistan`)] = `Chaina`;
+console.log(neighbours);
 
 //-----------------------------------------------------------------------------
