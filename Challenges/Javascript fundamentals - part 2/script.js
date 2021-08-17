@@ -25,7 +25,7 @@ checkWinner(dolphinsScore1, koalasScore1);
 checkWinner(dolphinsScore2, koalasScore2);
 
 //-----------------------------------------------------------------------------
-*/
+
 
 //---------------------------------Challage #2---------------------------------
 //-----------------------------------------------------------------------------
@@ -41,5 +41,35 @@ console.log(tips);
 
 const total = [bills[0]+tips[0], bills[1]+tips[1],bills[2]+tips[2]];
 console.log(total);
+
+//-----------------------------------------------------------------------------
+*/
+
+
+//---------------------------------Challage #3---------------------------------
+//-----------------------------------------------------------------------------
+
+const mark = {
+  fullName: `Mark Miller`,
+  mess: 78,
+  height:1.69,
+  calcBMI: function(){
+    return this.BMI = this.mess / this.height ** 2;
+  } 
+}
+
+const john = {
+  fullName: `John Smith`,
+  mess: 92,
+  height:1.95,
+  calcBMI: function(){
+    return this.BMI = this.mess / this.height ** 2;
+  } 
+}
+if (mark.calcBMI() > john.calcBMI()){
+  console.log(`${mark.fullName}'s BMI (${mark.calcBMI()}) is heigher than ${john.fullName}s (${john.calcBMI()})`);
+} else {
+  console.log(`${john.fullName}'s BMI (${john.calcBMI()}) is heigher than ${mark.fullName}'s (${mark.calcBMI()})`);
+}
 
 //-----------------------------------------------------------------------------
