@@ -183,11 +183,28 @@ myCountry.describe();
 console.log(myCountry.checkIsland());
 
 //-----------------------------------------------------------------------------
-*/
 
 //---------------------LECTURE: Iteration: The for Loop------------------------
 //-----------------------------------------------------------------------------
 for (let i = 1; i < 51; i++) {
   console.log(`voter number ${i} currently votting 👨`);
 }
+//-----------------------------------------------------------------------------
+
+*/
+
+//--------------LECTURE: Looping Arrays, Breaking and Continuing---------------
+//-----------------------------------------------------------------------------
+
+const population = [161, 1366, 21, 66];
+const percentage2 = [];
+
+function percentageOfWorld1(population) {
+  return population / 7900 * 100;
+}
+for (let i = 0; i < population.length; i++) {
+  percentage2.push(percentageOfWorld1(population[i]));
+}
+console.log(percentage2);
+
 //-----------------------------------------------------------------------------
