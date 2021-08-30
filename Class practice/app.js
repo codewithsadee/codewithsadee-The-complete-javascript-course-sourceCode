@@ -237,40 +237,65 @@
 
 
 
+// const twitterUser = 'Everyone';
+// console.log(`Hi ${twitterUser} welcome to my profile 💖`);
+
+// const info = {
+//   fullName: 'Sadee 🧔',
+//   recentActivity: 'JS advence consept 📖',
+//   work: 'Author of Web Explorer',
+//   skills: ['JavaScript', 'CSS3', 'MySQL', 'React', 'Sass', 'Nodejs'],
+//   dateOfBirth: '5th september 🍼',
+//   hobby: 'coding 💻',
+//   followMe: twitterUser === 'Programmer' ? true : false,
+// }
+
+// const person = bio => {
+//   console.log(`I'm ${bio.fullName}
+//   Twitting about my jurney, ${bio.hobby} & ${bio.recentActivity}`);
+// }
+// person(info);
+
+// const fullName0 = 'tokee';
+// const fullName1 = 'sadee';
+// console.log(fullName0 > fullName1);
+
+// console.log( 10 < 20 < 30 );
+// console.log( 30 > 20 > 60 );
+
+// const bills = [20, 50, 100, 10, 301];
+// const tips = [];
+
+// const averageFunc = arr => {
+//   let sum = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     const calcTip = arr[i] * (arr[i] >= 50 && arr[i] <= 300 ? 15: 20) / 100;
+//     tips.push(calcTip);
+//     sum += tips[i];
+//   }
+//   return sum / arr.length;
+// }
+// const billAverage = averageFunc(bills).toFixed(2);
+// console.log(tips); // [ 4, 7.5, 15, 2, 60.2 ] 
+// console.log(billAverage); // 17.74
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-const twitterUser = 'Everyone';
-console.log(`Hi ${twitterUser} welcome to my profile 💖`);
-
-const info = {
-  fullName: 'Sadee 🧔',
-  recentActivity: 'JS advence consept 📖',
-  work: 'Author of Web Explorer',
-  skills: ['JavaScript', 'CSS3', 'MySQL', 'React','Sass', 'Nodejs' ],
-  dateOfBirth: '5th september 🍼',
-  hobby: 'coding 💻',
-  followMe: twitterUser === 'Want to know about my jurney'? true: false,
+let people = 0;
+for (let x = 0; x < 10; x++) {
+  people += x;
+  console.log(``);
 }
-
-const person = bio => {
-  console.log(`I'm ${bio.fullName}
-  I'm here for sharing about my jurney, ${bio.hobby} & ${bio.recentActivity}`);
+const myBoi = {
+  fullName: 'mohammad sadee',
+  birthYear: 1996,
+  location: 'Chandpur, Bangladesh',
+  calcAge: function(){
+    return this.age = 2021 - this.birthYear;
+  }
 }
-person(info);
+myBoi.calcAge();
+console.log(myBoi.age)
+
+console.log(`hello world! hello world hello wolrd i'm from bd`);
+const personWhoCode = 'sadee';
