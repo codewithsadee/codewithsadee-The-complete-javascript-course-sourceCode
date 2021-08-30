@@ -1,6 +1,4 @@
 `use strict`;
-const ps = require('prompt-sync');
-const prompt = ps();
 
 // const userInput = document.querySelector('#userInput');
 // const submitBtn = document.querySelector('#submit');
@@ -82,33 +80,33 @@ const prompt = ps();
 
 // console.log(isNumber, isCapital, isSpecial, totalCount);
 
-personFriends = function (friend1, friend2, friend3) {
-  const arr = [friend1, friend2, friend3];
-  return arr;
-}
+// personFriends = function (friend1, friend2, friend3) {
+//   const arr = [friend1, friend2, friend3];
+//   return arr;
+// }
 
-const info = {
-  fullName: 'Mohammad Sadee',
-  job: 'Programmer',
-  location: 'Bangladesh',
-  birthYear: 1996,
-  calcAge: function () {
-    this.age = 2021 - this.birthYear;
-  },
-  friends: personFriends('Amit', 'Shakib', 'Rashed'),
-}
-info.friends[info.friends.indexOf('Shakib')] = 'Kashmir';
+// const info = {
+//   fullName: 'Mohammad Sadee',
+//   job: 'Programmer',
+//   location: 'Bangladesh',
+//   birthYear: 1996,
+//   calcAge: function () {
+//     this.age = 2021 - this.birthYear;
+//   },
+//   friends: personFriends('Amit', 'Shakib', 'Rashed'),
+// }
+// info.friends[info.friends.indexOf('Shakib')] = 'Kashmir';
 
-info.calcAge();
-console.log(info);
+// info.calcAge();
+// console.log(info);
 
-for (let i = 0; i < info.friends.length; i++) {
-  if (info.friends.includes('Kashmir')) {
-    console.log(`You haven't friend called Kashmir`);
-  } else if (info.friends.includes(info.friends[i])) {
-    console.log(`you've friend called ${info.friends[i]} and he is your good friend`);
-  }
-}
+// for (let i = 0; i < info.friends.length; i++) {
+//   if (info.friends.includes('Kashmir')) {
+//     console.log(`You haven't friend called Kashmir`);
+//   } else if (info.friends.includes(info.friends[i])) {
+//     console.log(`you've friend called ${info.friends[i]} and he is your good friend`);
+//   }
+// }
 
 
 
@@ -126,3 +124,153 @@ for (let i = 0; i < info.friends.length; i++) {
 //   console.log(`No friend called ${userInput}`);
 // }
 
+
+// number string boolean undefined null BigInt symbol
+
+// let num = 1;
+// console.log(typeof num)
+// num = '1';
+// console.log(typeof num)
+// num = 1n;
+// console.log(typeof num)
+// num = true;
+// console.log(typeof num)
+// num = undefined;
+// console.log(typeof num)
+// num = null;
+// console.log(typeof num)
+// num = new Object();
+// console.log(typeof num)
+// num.name = 'hello';
+// console.log(typeof num.name)
+
+// num = [20, ['sadee', 'tokee'], '89'];
+// console.log((num[2] * 5 + true))
+// num = typeof num[2];
+// num = '20' / -0;
+// console.log(num)
+// num = [20, 44, 55, 1, 2, 30];
+// let maxToMin;
+// maxToMin = (num.splice(num.indexOf(Math.max(...num)), 1));
+// console.log(Math.max(...num));
+// maxToMin.push((num.splice(num.indexOf(Math.max(...num)), 1)));
+// maxToMin
+
+// console.log(+'', +undefined, +NaN, +null, +0);
+// console.log(-'', -undefined, -NaN, -null, -0);
+// let String = '-20';
+// console.log(-String)
+
+// let str = 'codewithsadee';
+// let rStr = '';
+// for (let i = str.length; i >= 0; i--) {
+//   rStr += str.charAt(i);
+// }
+// console.log(rStr);
+
+// const birthYear = [1996, 1992, 1995, 2005];
+
+// const friendsAges = [];
+// for (let y = 0; y < birthYear.length; y++) {
+//   const ages = 2021 - birthYear[y];
+//   friendsAges.push(ages);
+// }
+
+// console.log(friendsAges);
+
+// const kass = {
+//   fullName: 'Kassandra Sanch',
+//   followers: 26.2,
+//   postLikes: 3.5
+// }
+// const parcentOfLike = function (followers, likes) {
+//   const postLikePercentage = (likes / followers * 100).toFixed(2);
+//   return `${kass.fullName} got ${postLikePercentage}% (${kass.postLikes}k) likes out of ${kass.followers}k followers `;
+// }
+
+// console.log(parcentOfLike(kass.followers, kass.postLikes));
+
+// for (let x = 0; x <= 8; x++) {
+//   console.log(x);
+// }
+
+// let num = 350;
+// if (num !== 300){
+// console.log('unlucky number');
+// }
+
+// const computerRam = 8;
+// const bitsString = [];
+
+// const calculateBits = function (gigabyte) {
+//   let totaBitsN = gigabyte * 1000 * 1000 * 1000 * 1000;
+//   totaBitsN = totaBitsN.toString();
+
+//   for (let i = totaBitsN.length; i >= 0; i -= 3) { // 000 000 000 000 8 -> 000 000 000 800
+//     bitsString.push(totaBitsN.slice(i - 3, i)); // 8 0
+//     console.log(i);
+//   }
+// }
+
+// calculateBits(computerRam);
+// console.log(bitsString);
+
+// const totalBits = calculateBits(computerRam).toString().length;
+// console.log(totalBits);
+
+// let result = ''; // ,000,000,000,000,8
+
+// // 8,000,000,000,000
+
+// const separateNumbers = function (numStr) {
+
+//   for (let i = numStr.length - 1; i >= 0; i -= 3) {
+//     result += `,${numStr.slice(i - 3, i)}`
+//   }
+
+//   return result;
+// }
+
+// separateNumbers(totalBits);
+
+// console.log(result);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const twitterUser = 'Everyone';
+console.log(`Hi ${twitterUser} welcome to my profile 💖`);
+
+const info = {
+  fullName: 'Sadee 🧔',
+  recentActivity: 'JS advence consept 📖',
+  work: 'Author of Web Explorer',
+  skills: ['JavaScript', 'CSS3', 'MySQL', 'React','Sass', 'Nodejs' ],
+  dateOfBirth: '5th september 🍼',
+  hobby: 'coding 💻',
+  followMe: twitterUser === 'Want to know about my jurney'? true: false,
+}
+
+const person = bio => {
+  console.log(`I'm ${bio.fullName}
+  I'm here for sharing about my jurney, ${bio.hobby} & ${bio.recentActivity}`);
+}
+person(info);

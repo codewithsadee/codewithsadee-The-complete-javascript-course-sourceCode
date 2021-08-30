@@ -90,19 +90,19 @@ const calcTip = function (bill) {
     totals.push(bill[x] + tip);
   }
 }
-
 calcTip(bills);
 console.log(tips)
 console.log(totals);
 
 //----Bonus Chellange----
 
-const calcAverage = function(arr){
+const calcAverage = function (arr) {
   let sum = 0;
-  for (let i = 0; i < arr.length; i++){
+  for (let i = 0; i < arr.length; i++) {
     sum += arr[i];
   }
   return sum / arr.length;
 }
-console.log(calcAverage(totals));
+let billAverage = calcAverage(totals);
+console.log(billAverage);
 //-----------------------------------------------------------------------------
