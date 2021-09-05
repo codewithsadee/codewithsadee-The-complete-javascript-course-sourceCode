@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"">
 
 <head>
   <meta charset="UTF-8">
@@ -16,64 +16,35 @@
       /* border: 1px solid; */
     }
 
-    .container {
-      min-height: 100vh;
+    body {
       font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .inputBox {
-      height: 50vh;
+      min-height: 100vh;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
     }
 
-    .inputBox div {
-      border: 2px solid #747373;
-    }
-
-    .inputBox input,
-    .inputBox span {
-      padding: 10px;
-      font-size: 20px;
-      border: none;
-      outline: none;
-    }
-
-    .inputBox span {
+    button {
+      padding: 10px 20px;
+      font-size: 24px;
       cursor: pointer;
-      background: #ffdc41;
     }
 
-    .result {
-      height: 50vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .result h1 {
-      font-size: 60px;
-      padding: 40px 60px;
-      background: #0dc426;
-      color: #ffffff;
+    div {
+      font-size: 30px;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      background: #fff;
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
 
-    <div class="inputBox">
-      <div><input id="userInput" type="number" placeholder="What's the hidden number?"> <span id="submit">HIT!</span>
-      </div>
-    </div>
+  <div>HEX: <span class="hex" contenteditable>#FFFFFF</span></div>
+  <button>Generate</button>
 
-    <div class="result">
-      <h1 id="result">!!!</h1>
-    </div>
-
-  </div>
   <script src="app.js"></script>
 </body>
 

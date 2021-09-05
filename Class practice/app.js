@@ -281,21 +281,51 @@
 
 
 
-let people = 0;
-for (let x = 0; x < 10; x++) {
-  people += x;
-  console.log(``);
-}
-const myBoi = {
-  fullName: 'mohammad sadee',
-  birthYear: 1996,
-  location: 'Chandpur, Bangladesh',
-  calcAge: function(){
-    return this.age = 2021 - this.birthYear;
-  }
-}
-myBoi.calcAge();
-console.log(myBoi.age)
+// let people = 0;
+// for (let x = 0; x < 10; x++) {
+//   people += x;
+//   console.log(``);
+// }
+// const myBoi = {
+//   fullName: 'mohammad sadee',
+//   birthYear: 1996,
+//   location: 'Chandpur, Bangladesh',
+//   calcAge: function(){
+//     return this.age = 2021 - this.birthYear;
+//   }
+// }
+// myBoi.calcAge();
+// console.log(myBoi.age)
 
-console.log(`hello world! hello world hello wolrd i'm from bd`);
-const personWhoCode = 'sadee';
+// console.log(`hello world! hello world hello wolrd i'm from bd`);
+// const personWhoCode = 'sadee';
+
+
+// let colorHex = '#';
+
+
+// function backgroundGenerator() {
+//   colorHex += Math.trunc(Math.random() * 10);
+//   colorHex.length === 7 ? document.body.style.background = colorHex : backgroundGenerator();
+//   document.querySelector('.hex').textContent = colorHex;
+//   colorHex = '#';
+// }
+
+// backgroundGenerator();
+
+const generateHex = () => {
+  let hex = '#';
+  for (let i = 0; i < 6; i++) {
+    hex += Math.trunc(Math.random() * 10);
+  }
+  document.body.style.background = hex;
+  document.querySelector('.hex').textContent = hex;
+};
+
+document.querySelector('button').addEventListener('click', generateHex);
+document.addEventListener('keydown', e => {
+  console.log(e.keyCode)
+  if (e.keyCode === 32) {
+    generateHex();
+  }
+});
